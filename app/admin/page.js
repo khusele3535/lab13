@@ -18,8 +18,7 @@ export default async function AdminPage() {
 
   // Өгөгдөл татах хэсгийг л зөвхөн try/catch дотор хийнэ
   try {
-    const res = await fetch(`${baseUrl}/api/products`, { cache: 'no-store' });
-    if (!res.ok) throw new Error();
+    const res = await fetch('https://vercel.app', { cache: 'no-store' });    if (!res.ok) throw new Error();
     products = await res.json();
     productCount = products.length;
   } catch (error) {
