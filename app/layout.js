@@ -46,17 +46,6 @@ export default function RootLayout({ children }) {
               >
                 Бүтээгдэхүүн
               </Link>
-
-              <Link 
-                href="/admin" 
-                className={`px-4 py-2 rounded-lg text-sm font-bold transition-all ${
-                  isActive('/admin') 
-                  ? 'bg-blue-100 text-blue-700' 
-                  : 'text-slate-600 hover:bg-slate-100'
-                }`}
-              >
-                Админ
-              </Link>
             </div>
           </div>
         </nav>
